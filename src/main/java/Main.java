@@ -1,25 +1,23 @@
 public class Main {
-    public static void main(String[] args) {
-        int inputNumberArray[] = {11, 22, 45, 92, 21, 54, 79, 11};
-        int firstLargestNumber = 0;
-        int secondLargestNumber = 0;
-        for (int i = 0; i < inputNumberArray.length; i++) {
+    public static void main(String[] args)
+    {
 
+            int inputNumberArray[] = { 10, 5, 350, 100, 45, 95, 560, 101,770,561 ,1000};
+            int firstLargestNum = 0;
+            int secondLargestNum = 0;
 
-            if (firstLargestNumber < inputNumberArray[i]) {
-
-
-                firstLargestNumber = inputNumberArray[i];
-
-            } else if (secondLargestNumber < inputNumberArray[i]) {
-
-                {
-                    secondLargestNumber = inputNumberArray[i];
+            for (int i = 0; i < inputNumberArray.length; i++) {
+                if (firstLargestNum < inputNumberArray[i]) {
+                    secondLargestNum = firstLargestNum;
+                    firstLargestNum = inputNumberArray[i];
+                } else if (secondLargestNum < inputNumberArray[i]) {
+                    secondLargestNum = inputNumberArray[i];
                 }
-
-
             }
-            System.out.println("First Largest Number:" + firstLargestNumber + ",Second Largest Number:" + secondLargestNumber);
+            System.out.println("First Latest Number:" + firstLargestNum+ ", Second Latest Number:" + secondLargestNum);
         }
     }
-}
+        
+
+    
+
